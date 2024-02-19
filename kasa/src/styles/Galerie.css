@@ -1,0 +1,17 @@
+.galerie {
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1240px;
+    margin: 0px 80px;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .galerie {
+      margin: -20px 20px 0px 20px;
+      background-color: white;
+    }
+
+  }

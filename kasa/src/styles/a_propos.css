@@ -1,0 +1,32 @@
+.main_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 400px;
+}
+
+.main_content .collapse {
+    max-width: 100%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .main_content {
+        max-width: 80%;
+        margin-left: 10%;
+    }
+
+    .main_content .collapse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .main_content .collapse_title,
+    .main_content .collapse,
+    .main_content.collapse_content {
+        max-width: 100%;
+    }
+}

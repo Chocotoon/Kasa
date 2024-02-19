@@ -1,0 +1,147 @@
+.main_content_logement {
+    max-width: 1240px;
+    margin: 40px 80px;
+}
+
+.logement_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titles h2 {
+    color: #FF6060;
+}
+
+.titles h3 {
+    font-weight: 500;
+}
+
+.host_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info_perso {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info_perso img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.main_content_logement .info_perso h4 {
+    max-width: 80px
+}
+
+.main_content_logement .rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logement_categories {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.tags {
+    display: flex;
+    width: fit-content;
+
+}
+
+.main_content_logement .collapses {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.collapses .collapse,
+.collapses .collapse_content,
+.collapses .collapse_title {
+    max-width: 490px;
+    width: 100%;
+
+}
+
+.main_content_logement .collapse_content {
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+}
+
+@media screen and (max-width: 1200px) {
+    .main_content_logement {
+        margin: 20px;
+    }
+
+    .main_content_logement .carousel {
+        height: 255px;
+    }
+
+    .main_content_logement .carousel img {
+        width: 100%;
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    .main_content_logement .carousel button {
+        top: 35%;
+    }
+
+    .main_content_logement .imageCounter {
+        left: 48%;
+    }
+
+    .titles h2 {
+        width: 100%;
+    }
+
+    .logement_info {
+        display: block;
+    }
+
+    .logement_categories {
+        display: block;
+    }
+
+    .main_content_logement .collapses {
+        flex-direction: column;
+    }
+
+    .main_content_logement .collapse,
+    .main_content_logement .collapse_content,
+    .main_content_logement .collapse_title {
+        width: 100%;
+    }
+
+    .main_content_logement .collapse {
+        margin-bottom: 20px;
+    }
+
+    .main_content_logement .tag {
+        margin-bottom: 10px;
+    }
+
+    .main_content_logement .host_info {
+        flex-direction: row-reverse;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main_content_logement .info_perso {
+        display: flex;
+        align-items: center;
+
+    }
+
+
+}

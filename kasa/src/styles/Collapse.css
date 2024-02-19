@@ -1,0 +1,30 @@
+.collapse_title {
+    width: 993px;
+    height: 52px;
+    border-radius: 5px;
+    background-color: #FF6060;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.collapse_title button {
+    background-color: #FF6060;
+    border: none;
+    color: white;
+}
+
+.collapse_content {
+    text-align: justify;
+    width: 993px;
+    background-color: #F6F6F6;
+    margin-top: 0px;
+    padding: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+

@@ -1,0 +1,39 @@
+.carousel {
+    position: relative;
+    height: 415px;
+    max-width: 1240px;
+}
+
+.carousel img {
+    height: 415px;
+    max-width: 1240px;
+    object-fit: cover;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.carousel button {
+    height: 80px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    top: 45%;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#next_btn {
+    right: 20px;
+}
+
+#prev_btn {
+    left: 20px;
+}
+
+.imageCounter {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    color: white;
+}

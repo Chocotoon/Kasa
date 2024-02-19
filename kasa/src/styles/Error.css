@@ -1,0 +1,42 @@
+.error_wrapper h1 {
+    font-size: 288px;
+}
+
+.error_wrapper h1,
+.error_wrapper h2 {
+    color: #FF6060;
+    text-align: center;
+}
+
+.error_wrapper h1,
+.error_wrapper h2,
+.error_wrapper a {
+    margin: 0;
+}
+
+.error_wrapper h2 {
+    font-size: 36px;
+}
+
+.error_wrapper a {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+    .error_wrapper h1 {
+        font-size: 96px;
+        margin: 80px 0px;
+    }
+    .error_wrapper h2 {
+        font-size: 18px;
+    }
+    .error_wrapper a {
+        margin: 60px 0px;
+    }
+}
+
