@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
-function Collapse({ title, content }) {
+function Collapse({ title, children }) {
 
     const [isOpen, setIsOpen] = useState(false)
 
@@ -15,7 +15,7 @@ function Collapse({ title, content }) {
             <div className='collapse_title'>
                 <h2>{title}</h2>
                 <button onClick={() => setIsOpen(false)}><FontAwesomeIcon icon={faChevronUp} /></button></div>
-            <p className='collapse_content'>{content}</p>
+            <p className='collapse_content'>{children}</p>
         </div>
 
     ) : (

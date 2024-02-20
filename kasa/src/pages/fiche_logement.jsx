@@ -43,8 +43,13 @@ function Fiche() {
             </div>
 
             <div className='collapses'>
-                <Collapse title="Description" content={currentLogement.description} />
-                <Collapse title="Equipements" content={currentLogement.equipments.map(equipment => (<span key={`${currentLogement.id}-${equipment}`}>{equipment}</span>))} />
+                <Collapse title="Description">
+                    {currentLogement.description}
+                </Collapse>
+                <Collapse title="Equipements">
+                    {currentLogement.equipments.map(equipment =>
+                        (<span key={`${currentLogement.id}-${equipment}`}>{equipment}</span>))}
+                </Collapse>
             </div>
 
 
