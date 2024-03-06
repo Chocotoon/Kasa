@@ -1,19 +1,26 @@
 import '../styles/Galerie.css'
 import Card from './Card'
-import useFetchLogements from '../hooks/useFetchLogements'
+import { useState, useEffect } from 'react';
 
 
 function Galerie() {
 
-    const { data, status } = useFetchLogements();
+    const [logements, setLogements] = useState()
+    useEffect(() => {
+        fetch('/data/logements.json').then(response => 
+            response.json().then((data) => {
+                setLogements(data)})
+                .catch((error) => console.log(error)))
+    }, [])
 
-    if (!data || data.length === 0) {
+    if (!logements || logements.length === 0) {
         return <div>No data available</div>;
     }
+    
     return (
         <div className='galerie'>
-            {data.map(logement => (
-                <Card key={`${logement.id}-${logement.title}`} logement={logement}/>
+            {logements.map(logement => (
+                <Card key={`${logement.id}-${logement.title}`} logement={logement} />
             ))}
         </div>
     )

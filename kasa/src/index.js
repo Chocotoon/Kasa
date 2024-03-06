@@ -9,16 +9,12 @@ import Error from './pages/Error'
 import Fiche from './pages/fiche_logement'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import 'typeface-montserrat'
-import { QueryClient, QueryClientProvider } from 'react-query'
 
-const queryClient = new QueryClient()
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <React.StrictMode>
-    <QueryClientProvider client={queryClient}>
       <Router>
         <Header />
         <Routes>
@@ -29,7 +25,6 @@ root.render(
         </Routes>
         <Footer />
       </Router>
-    </QueryClientProvider>
   </React.StrictMode>
 );
 

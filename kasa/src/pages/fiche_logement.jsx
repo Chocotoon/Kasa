@@ -1,20 +1,28 @@
 import '../styles/fiche_logement.css'
 import { useNavigate, useParams } from 'react-router'
-import useFetchLogements from '../hooks/useFetchLogements'
 import Slideshow from '../components/Slideshow'
 import Tag from '../components/Tags'
 import Collapse from '../components/Collapse'
 import Rating from '../components/Rating'
+import { useState, useEffect} from 'react'
 
 
 function Fiche() {
     const logementId = useParams()
     const navigate = useNavigate()
-    const { data, status } = useFetchLogements();
-    if (!data || data.length === 0) {
+
+    const [logements, setLogements] = useState()
+    useEffect(() => {
+        fetch('/data/logements.json').then(response => 
+            response.json().then((data) => {
+                setLogements(data)})
+                .catch((error) => console.log(error)))
+    }, [])
+
+    if (!logements || logements.length === 0) {
         return <div>No data available</div>;
     }
-    const currentLogement = data.find(logement => logement.id === logementId.id);
+    const currentLogement = logements.find(logement => logement.id === logementId.id);
     if (!currentLogement) {
         navigate('/error');
         return null;

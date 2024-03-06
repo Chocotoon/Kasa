@@ -10,6 +10,8 @@
 
 .titles h2 {
     color: #FF6060;
+    font-weight: 500;
+    font-size: 36px;
 }
 
 .titles h3 {
@@ -26,6 +28,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .info_perso img {
@@ -36,7 +39,9 @@
 }
 
 .main_content_logement .info_perso h4 {
-    max-width: 80px
+    max-width: 80px;
+    color: #FF6060;
+    font-weight: 500;
 }
 
 .main_content_logement .rating {
@@ -53,6 +58,7 @@
 .tags {
     display: flex;
     width: fit-content;
+    flex-wrap: wrap;
 
 }
 
@@ -100,8 +106,9 @@
         left: 48%;
     }
 
-    .titles h2 {
+    .titles h2, .titles h3 {
         width: 100%;
+        font-size: 18px;
     }
 
     .logement_info {
@@ -141,6 +148,10 @@
         display: flex;
         align-items: center;
 
+    }
+
+    .main_content_logement .info_perso h4 {
+        font-size: 12px;
     }
 
 

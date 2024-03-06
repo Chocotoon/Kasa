@@ -9,6 +9,7 @@
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
+    font-size: 18px;
 }
 
 .collapse_title button {
@@ -28,4 +29,8 @@
     border-bottom-right-radius: 5px;
 }
 
-
+@media screen and (max-width: 1200px) {
+    .collapse_title {
+        font-size: 13px;
+    }
+}

@@ -11,7 +11,7 @@ function Rating({ rating }) {
                 <span key={rangeElem.toString()} className='rated'>
                     <FontAwesomeIcon icon={faStar} />
                 </span>
-                : <span className='unrated'>
+                : <span key={rangeElem.toString()} className='unrated'>
                     <FontAwesomeIcon icon={faStar} />
                 </span>
             )}

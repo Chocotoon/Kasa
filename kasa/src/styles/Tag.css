@@ -1,6 +1,6 @@
 .tag {
     width: fit-content;
-    height: 25px;
+    max-height: 25px;
     background-color: #FF6060;
     color: white;
     border-radius: 8px;
