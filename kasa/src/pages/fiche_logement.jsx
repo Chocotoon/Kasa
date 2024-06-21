@@ -13,7 +13,7 @@ function Fiche() {
 
     const [logements, setLogements] = useState()
     useEffect(() => {
-        fetch('/data/logements.json').then(response => 
+        fetch('kasa/data/logements.json').then(response => 
             response.json().then((data) => {
                 setLogements(data)})
                 .catch((error) => console.log(error)))
