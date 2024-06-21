@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a0b5ac2f.css",
+    "main.js": "/static/js/main.a313dde8.js",
+    "static/js/592.dad3ac87.chunk.js": "/static/js/592.dad3ac87.chunk.js",
+    "static/media/apropos_banner_img.png": "/static/media/apropos_banner_img.4cfda21b80ef923a5692.png",
+    "static/media/home_banner_img.png": "/static/media/home_banner_img.f713d89bcea74340886e.png",
+    "index.html": "/index.html",
+    "main.a0b5ac2f.css.map": "/static/css/main.a0b5ac2f.css.map",
+    "main.a313dde8.js.map": "/static/js/main.a313dde8.js.map",
+    "592.dad3ac87.chunk.js.map": "/static/js/592.dad3ac87.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0b5ac2f.css",
+    "static/js/main.a313dde8.js"
+  ]
+}
